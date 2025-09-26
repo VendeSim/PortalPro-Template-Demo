@@ -1,0 +1,66 @@
+==============================================================================
+License to Use - PortalPro Template
+======================================================================================
+
+Copyright (c) 2025, corporationvendesim@gmail.com
+All rights reserved.
+
+Thank you for purchasing PortalPro. This license grants you, the purchaser, the right to use this template under the following terms:
+
+PERMITTED USE:
+--------------------------------------------------------------------------------
+1. You may use the template to create one (1) final product for personal use or for a client.
+2. You may modify the template and combine it with other works to create your final product.
+3. Your final product may be distributed for free or sold.
+
+UNPERMITTED USE:
+--------------------------------------------------------------------------------
+1. You may NOT redistribute, resell, rent, license, or sublicense the original or modified template as a website template. In other words, you may not resell this item on marketplaces like ThemeForest, even if you have modified it.
+2. You may NOT offer the template for download on any medium or device.
+
+CREDITS:
+--------------------------------------------------------------------------------
+This template was created and is maintained by:
+Email: corporationvendesim@gmail.com
+
+The template uses the following open source libraries, whose original licenses must be respected:
+- Tailwind CSS (MIT License)
+- FullCalendar.io (MIT License)
+- Chart.js (MIT License)
+- Google Fonts (OFL License)
+
+======================================================================================
+
+
+================================================================================
+Licença de Uso - Template PortalPro
+================================================================================
+
+Copyright (c) 2025, corporationvendesim@gmail.com
+Todos os direitos reservados.
+
+Obrigado por adquirir o PortalPro. Esta licença concede a você, o comprador, o direito de usar este template nos seguintes termos:
+
+USO PERMITIDO:
+--------------------------------------------------------------------------------
+1.  Você pode usar o template para criar um (1) produto final para uso pessoal ou para um cliente.
+2.  Você pode modificar o template e combiná-lo com outros trabalhos para criar seu produto final.
+3.  Seu produto final pode ser distribuído gratuitamente ou vendido.
+
+USO NÃO PERMITIDO:
+--------------------------------------------------------------------------------
+1.  Você NÃO pode redistribuir, revender, alugar, licenciar ou sublicenciar o template original ou modificado como um template de site. Em outras palavras, você não pode revender este item em marketplaces como a ThemeForest, mesmo que o tenha modificado.
+2.  Você NÃO pode oferecer o template para download em qualquer meio ou dispositivo.
+
+CRÉDITOS:
+--------------------------------------------------------------------------------
+Este template foi criado e é mantido por:
+E-mail: corporationvendesim@gmail.com
+
+O template utiliza as seguintes bibliotecas de código aberto, cujas licenças originais devem ser respeitadas:
+- Tailwind CSS (Licença MIT)
+- FullCalendar.io (Licença MIT)
+- Chart.js (Licença MIT)
+- Google Fonts (Licença OFL)
+
+================================================================================

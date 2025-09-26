@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentação - PortalPro</title>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        pre {
+            background-color: #f3f4f6;
+            border: 1px solid #e5e7eb;
+            border-radius: 0.5rem;
+            padding: 1rem;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+        code {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 0.9em;
+        }
+        .prose h2 {
+            border-bottom: 1px solid #e5e7eb;
+            padding-bottom: 0.5rem;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+        .prose h3 {
+            margin-top: 1.5rem;
+            margin-bottom: 0.75rem;
+        }
+        .sidebar-link.active {
+            color: #38A89D;
+            font-weight: 600;
+        }
+    </style>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'brand-accent': '#38A89D',
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+<body class="bg-gray-50">
+
+<header class="bg-white border-b sticky top-0 z-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center space-x-3">
+        <svg class="w-8 h-8 text-brand-accent" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"></path><path d="M2 17l10 5 10-5"></path><path d="M2 12l10 5 10-5"></path></svg>
+        <h1 class="text-2xl font-bold text-gray-800">PortalPro</h1>
+        <span class="text-gray-500">Documentação</span>
+    </div>
+</header>
+
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex">
+        <aside class="hidden md:block w-64 flex-shrink-0 py-8 pr-8 sticky top-16 h-[calc(100vh-4rem)]">
+            <nav id="doc-nav" class="flex flex-col space-y-3">
+                <a href="#introducao" class="sidebar-link text-gray-600 hover:text-brand-accent">Introdução</a>
+                <a href="#primeiros-passos" class="sidebar-link text-gray-600 hover:text-brand-accent">Primeiros Passos</a>
+                <a href="#customizacao" class="sidebar-link text-gray-600 hover:text-brand-accent">Customização</a>
+                <ul class="space-y-3 pl-4">
+                    <li><a href="#cores" class="text-sm text-gray-500 hover:text-brand-accent">Cores e Tema</a></li>
+                    <li><a href="#fontes" class="text-sm text-gray-500 hover:text-brand-accent">Fontes</a></li>
+                    <li><a href="#menu" class="text-sm text-gray-500 hover:text-brand-accent">Itens do Menu</a></li>
+                    <li><a href="#grafico" class="text-sm text-gray-500 hover:text-brand-accent">Dados do Gráfico</a></li>
+                </ul>
+                <a href="#creditos" class="sidebar-link text-gray-600 hover:text-brand-accent">Créditos e Licença</a>
+                <a href="#suporte" class="sidebar-link text-gray-600 hover:text-brand-accent">Suporte</a>
+            </nav>
+        </aside>
+
+        <main class="flex-1 py-8 prose max-w-none">
+            <section id="introducao">
+                <h2>Introdução</h2>
+                <p>Obrigado por adquirir o template <strong>PortalPro</strong>. Esta é uma solução front-end completa e autônoma, construída com HTML, Tailwind CSS e JavaScript vanilla para máxima performance e facilidade de customização.</p>
+                <p>Este template inclui:</p>
+                <ul>
+                    <li>Dashboard completo com cards de KPI e gráfico interativo.</li>
+                    <li>Páginas de Solicitações, Calendário, Conversas e Perfil.</li>
+                    <li>Página de Gestão de Documentos com upload via modal.</li>
+                    <li>Uma vitrine de Componentes para fácil reuso.</li>
+                    <li>Suíte de autenticação com telas de Login e Cadastro.</li>
+                    <li>Design totalmente responsivo (desktop, tablet, mobile) e com Modo Escuro.</li>
+                </ul>
+            </section>
+
+            <section id="primeiros-passos">
+                <h2>Primeiros Passos</h2>
+                <p>Este template foi projetado para ser o mais simples possível de usar. Não há necessidade de compilação ou instalação de pacotes. Basta abrir os arquivos <code>.html</code> em seu navegador.</p>
+                <ul>
+                    <li><code>index.html</code>: O arquivo principal da aplicação após o login.</li>
+                    <li><code>login.html</code>: A página de Login e Recuperação de Senha.</li>
+                    <li><code>cadastro.html</code>: A página de Cadastro de novos usuários.</li>
+                </ul>
+                <p>Todos os estilos e scripts necessários já estão inclusos e são carregados via CDN (Content Delivery Network) para sua conveniência.</p>
+            </section>
+
+            <section id="customizacao">
+                <h2>Customização</h2>
+                <p>A customização do template é feita diretamente nos arquivos HTML, principalmente no bloco <code>&lt;script&gt;</code> de configuração do Tailwind e no JavaScript principal.</p>
+
+                <h3 id="cores">Cores e Tema</h3>
+                <p>As cores principais do template podem ser alteradas facilmente no objeto de configuração do Tailwind, localizado no <code>&lt;head&gt;</code> de cada arquivo HTML.</p>
+                <pre><code>tailwind.config = {
+    theme: {
+        extend: {
+            colors: {
+                'brand-accent': '#38A89D', // Cor principal de destaque
+                // ... outras cores
+            },
+        }
+    }
+}</code></pre>
+                <p>Altere o valor hexadecimal de <code>'brand-accent'</code> para a cor primária da sua marca e o template se adaptará automaticamente.</p>
+
+                <h3 id="fontes">Fontes</h3>
+                <p>A fonte padrão é a "Inter", carregada do Google Fonts. Para alterá-la, edite a tag <code>&lt;link&gt;</code> no <code>&lt;head&gt;</code> do arquivo e atualize a propriedade <code>font-family</code> no CSS.</p>
+                 <pre><code>&lt;!-- Mude a URL para a fonte desejada --&gt;
+&lt;link href="https://fonts.googleapis.com/css2?family=Sua-Fonte:wght@400;500;600;700&display=swap" rel="stylesheet"&gt;
+
+&lt;!-- Atualize o CSS --&gt;
+&lt;style&gt;
+    body {
+        font-family: 'Sua-Fonte', sans-serif;
+    }
+&lt;/style&gt;</code></pre>
+
+                <h3 id="menu">Itens do Menu Lateral</h3>
+                <p>Os links da sidebar são gerados dinamicamente a partir de um array de objetos em JavaScript, localizado no arquivo <code>index.html</code>. Para adicionar, remover ou editar um item, basta modificar o array <code>navItems</code>.</p>
+                 <pre><code>const navItems = [
+    { id: 'dashboard', label: 'Dashboard', icon: icons.dashboard, hasBadge: false },
+    { id: 'solicitacoes', label: 'Solicitações', icon: icons.ferias, hasBadge: false },
+    // Adicione um novo item aqui
+    { id: 'nova-pagina', label: 'Nova Página', icon: icons.algumIcone, hasBadge: false },
+];</code></pre>
+                 <p>Lembre-se de criar o conteúdo correspondente na variável <code>contentSections</code> para que o link funcione.</p>
+
+                 <h3 id="grafico">Dados do Gráfico</h3>
+                 <p>Os dados do gráfico no Dashboard também estão em um objeto JavaScript, dentro da função <code>handleDashboardCharts</code>. Você pode alterar as labels (meses) e os dados (valores) facilmente.</p>
+                <pre><code>const chartData = {
+    labels: ['Maio', 'Junho', 'Julho', 'Agosto', 'Setembro'],
+    datasets: [{
+        label: 'Solicitações',
+        data: [8, 12, 19, 15, 22],
+        backgroundColor: '#38A89D',
+    }]
+};</code></pre>
+            </section>
+            
+            <section id="creditos">
+                <h2>Créditos e Licença</h2>
+                <p>Este template foi criado e é mantido por <strong>corporationvendesim@gmail.com</strong>.</p>
+                <p>Ele foi construído utilizando as seguintes tecnologias e recursos fantásticos de código aberto:</p>
+                <ul>
+                    <li><a href="https://tailwindcss.com/" target="_blank">Tailwind CSS</a> - Framework CSS.</li>
+                    <li><a href="https://fullcalendar.io/" target="_blank">FullCalendar.io</a> - Biblioteca de Calendário.</li>
+                    <li><a href="https://www.chartjs.org/" target="_blank">Chart.js</a> - Biblioteca de Gráficos.</li>
+                    <li><a href="https://fonts.google.com/" target="_blank">Google Fonts</a> - Para a fonte "Inter".</li>
+                </ul>
+                <p><strong>Licença:</strong> Este template serve como uma base sólida e flexível para o desenvolvimento da sua aplicação web. Ele é ideal para portais de usuários, sistemas internos ou qualquer aplicação que exija uma interface moderna e funcional. Por favor, consulte o arquivo <code>license.txt</code> para detalhes completos.</p>
+            </section>
+            
+            <section id="suporte">
+                <h2>Suporte</h2>
+                <p>Se você encontrar qualquer problema ou tiver alguma dúvida, por favor, entre em contato através do email: <strong>corporationvendesim@gmail.com</strong>.</p>
+                <p>Obrigado novamente por escolher o <strong>PortalPro</strong>!</p>
+            </section>
+        </main>
+    </div>
+</div>
+
+<script>
+    // Script para destacar o link ativo na navegação da documentação
+    const navLinks = document.querySelectorAll('#doc-nav a');
+    const sections = document.querySelectorAll('main section');
+
+    window.addEventListener('scroll', () => {
+        let current = '';
+        sections.forEach(section => {
+            const sectionTop = section.offsetTop;
+            if (pageYOffset >= sectionTop - 68) { // 68 é a altura do header
+                current = section.getAttribute('id');
+            }
+        });
+
+        navLinks.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href') === `#${current}`) {
+                link.classList.add('active');
+            }
+        });
+    });
+</script>
+
+</body>
+</html>
